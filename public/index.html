@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CloudRest™ Cozy Dog Bed — Soft, Washable & Eco-Friendly</title>
+  <meta name="description" content="CloudRest™ Cozy Dog Bed — premium memory-foam dog bed with removable cover. Fast EU shipping, easy returns." />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Minimal extra styles */
+    .gallery-thumb { cursor: pointer; }
+    #notify { position: fixed; right: 20px; top: 20px; z-index: 60; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Topbar -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold">FluffyFriend</a>
+      <nav class="space-x-4 text-sm">
+        <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
+        <a href="#reviews" class="text-gray-600 hover:text-gray-900">Reviews</a>
+        <a href="#faq" class="text-gray-600 hover:text-gray-900">FAQ</a>
+      </nav>
+      <div class="flex items-center space-x-3">
+        <button class="text-sm px-3 py-1 rounded-md bg-green-50 text-green-700">Free EU shipping</button>
+        <a href="#" class="text-sm text-gray-600">Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product section -->
+  <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <!-- Gallery -->
+    <section class="bg-white p-4 rounded-lg shadow-sm">
+      <div id="mainImage" class="w-full h-96 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1601758003122-5c6b8b6a6d3d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Cozy dog bed" class="w-full h-full object-cover" />
+      </div>
+      <div class="mt-4 flex space-x-3">
+        <img class="w-20 h-20 object-cover rounded gallery-thumb" src="https://images.unsplash.com/photo-1568572933382-74d440642117?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" data-full="https://images.unsplash.com/photo-1601758003122-5c6b8b6a6d3d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="thumb">
+        <img class="w-20 h-20 object-cover rounded gallery-thumb" src="https://images.unsplash.com/photo-1612538732418-4a0c7c2f1f9f?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" data-full="https://images.unsplash.com/photo-1612538732418-4a0c7c2f1f9f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="thumb">
+        <img class="w-20 h-20 object-cover rounded gallery-thumb" src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b8?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" data-full="https://images.unsplash.com/photo-1537151625747-768eb6cf92b8?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="thumb">
+      </div>
+    </section>
+
+    <!-- Product info -->
+    <aside class="bg-white p-6 rounded-lg shadow-sm">
+      <h1 class="text-2xl font-extrabold">CloudRest™ Cozy Dog Bed</h1>
+      <p class="text-sm text-gray-600 mt-1">Premium memory-foam dog bed with removable washable cover — available in 3 sizes.</p>
+
+      <div class="mt-4 flex items-center justify-between">
+        <div>
+          <div class="text-3xl font-bold">€49.99</div>
+          <div class="text-sm text-gray-500">incl. VAT · Free returns within 30 days</div>
+        </div>
+        <div class="text-right">
+          <div class="text-sm text-gray-500">Ships from EU</div>
+          <div class="text-sm text-green-600">Fast delivery: 2–5 days</div>
+        </div>
+      </div>
+
+      <!-- Size selector -->
+      <div class="mt-6">
+        <h3 class="text-sm font-medium">Size</h3>
+        <div class="mt-2 flex space-x-2">
+          <button class="size-btn px-4 py-2 rounded-md border" data-size="S">Small</button>
+          <button class="size-btn px-4 py-2 rounded-md border" data-size="M">Medium</button>
+          <button class="size-btn px-4 py-2 rounded-md border" data-size="L">Large</button>
+        </div>
+      </div>
+
+      <!-- Color/variant -->
+      <div class="mt-4">
+        <h3 class="text-sm font-medium">Color</h3>
+        <div class="mt-2 flex space-x-2 items-center">
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="radio" name="color" class="hidden" checked value="Stone">
+            <span class="w-6 h-6 rounded-full bg-gray-300 border"></span>
+            <span class="ml-2 text-sm">Stone</span>
+          </label>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="radio" name="color" class="hidden" value="Sand">
+            <span class="w-6 h-6 rounded-full" style="background:#F5EBDD;border:1px solid #e5e7eb"></span>
+            <span class="ml-2 text-sm">Sand</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Add to cart -->
+      <div class="mt-6 flex items-center space-x-3">
+        <input type="number" value="1" min="1" class="w-20 p-2 border rounded" id="qty">
+        <button id="addBtn" class="px-5 py-3 bg-green-600 text-white rounded-md font-medium">Add to cart</button>
+        <div id="paypal-button-container"></div>
+      </div>
+
+      <!-- Trust & guarantee -->
+      <div class="mt-6 grid grid-cols-2 gap-3 text-sm">
+        <div class="flex items-start space-x-2">
+          <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <div>
+            <div class="font-medium">30-day returns</div>
+            <div class="text-gray-500">No questions asked</div>
+          </div>
+        </div>
+        <div class="flex items-start space-x-2">
+          <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18"></path></svg>
+          <div>
+            <div class="font-medium">EU Shipping</div>
+            <div class="text-gray-500">Fast & tracked</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social proof -->
+      <div class="mt-6">
+        <div class="text-sm font-medium">4.9 · 1,248 reviews</div>
+        <div class="mt-2 flex -space-x-2">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="avatar" class="w-8 h-8 rounded-full border-2">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="avatar" class="w-8 h-8 rounded-full border-2">
+          <img src="https://images.unsplash.com/photo-1584185632485-8d9e2f4f9b0b?q=80&w=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="avatar" class="w-8 h-8 rounded-full border-2">
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- Product details / description -->
+    <section class="col-span-1 lg:col-span-2 mt-4 bg-white p-6 rounded shadow-sm" id="features">
+      <h2 class="text-lg font-semibold">Product details</h2>
+      <p class="mt-2 text-gray-600">CloudRest™ Cozy Dog Bed is designed for comfort and durability. The breathable cover is machine-washable and the inner memory foam base provides support for joints. Perfect for small to large breeds. Available in three sizes.</p>
+
+      <ul class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <li class="p-4 border rounded">
+          <div class="font-medium">Machine washable</div>
+          <div class="text-sm text-gray-500">Removable cover for easy cleaning</div>
+        </li>
+        <li class="p-4 border rounded">
+          <div class="font-medium">Orthopedic foam</div>
+          <div class="text-sm text-gray-500">Support for older dogs and puppies</div>
+        </li>
+        <li class="p-4 border rounded">
+          <div class="font-medium">Eco-friendly</div>
+          <div class="text-sm text-gray-500">Materials from certified suppliers</div>
+        </li>
+      </ul>
+
+      <div id="reviews" class="mt-6">
+        <h3 class="font-semibold">Customer reviews</h3>
+        <div class="mt-3 space-y-4">
+          <article class="p-4 border rounded">
+            <div class="flex justify-between items-center">
+              <div>
+                <div class="font-medium">Anna, Warsaw</div>
+                <div class="text-xs text-yellow-500">★★★★★</div>
+              </div>
+              <div class="text-xs text-gray-500">2 days ago</div>
+            </div>
+            <p class="mt-2 text-gray-600">My dog loves this bed — easy to wash and very soft. Recommended!</p>
+          </article>
+        </div>
+      </div>
+
+      <div id="faq" class="mt-6">
+        <h3 class="font-semibold">FAQ</h3>
+        <details class="mt-2 border rounded p-3"><summary class="cursor-pointer font-medium">What size should I buy?</summary><p class="mt-2 text-gray-600">Measure your dog lying down from nose to tail and add ~10 cm for comfort. See size chart.</p></details>
+        <details class="mt-2 border rounded p-3"><summary class="cursor-pointer font-medium">How do I clean the bed?</summary><p class="mt-2 text-gray-600">Remove the cover and machine wash on a gentle cycle. Air dry the foam base.</p></details>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-white mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <div class="font-medium">FluffyFriend</div>
+        <div class="mt-2">Premium pet products shipped across the EU.</div>
+      </div>
+      <div>
+        <div class="font-medium">Support</div>
+        <div class="mt-2">FAQ · Shipping · Returns</div>
+      </div>
+      <div>
+        <div class="font-medium">Contact</div>
+        <div class="mt-2">hello@fluffyfriend.example</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notifications -->
+  <div id="notify" aria-live="polite"></div>
+
+  <!-- PayPal SDK: replace CLIENT_ID at build/runtime -->
+  <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=EUR"></script>
+
+  <script>
+    // Simple gallery interaction
+    document.querySelectorAll('.gallery-thumb').forEach(t => {
+      t.addEventListener('click', (e) => {
+        const full = e.currentTarget.getAttribute('data-full');
+        document.querySelector('#mainImage img').src = full;
+      });
+    });
+
+    // Size selection
+    document.querySelectorAll('.size-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.size-btn').forEach(b=>b.classList.remove('border-2','border-green-600'));
+        btn.classList.add('border-2','border-green-600');
+      });
+    });
+
+    // Add to cart simulation
+    document.getElementById('addBtn').addEventListener('click', () => {
+      const qty = parseInt(document.getElementById('qty').value || '1', 10);
+      const sizeBtn = document.querySelector('.size-btn.border-2');
+      const size = sizeBtn ? sizeBtn.getAttribute('data-size') : 'M';
+      const color = document.querySelector('input[name="color"]:checked').value;
+      const cart = { productId: 'cloudrest-cozy-dog-bed', qty, size, color };
+      localStorage.setItem('cart', JSON.stringify(cart));
+      showNotify('Added to cart', 'success');
+    });
+
+    // Notifications
+    function showNotify(text, type='info') {
+      const div = document.createElement('div');
+      div.className = 'px-4 py-2 rounded shadow mb-2 ' + (type==='success' ? 'bg-green-50 text-green-800' : 'bg-yellow-50 text-yellow-800');
+      div.textContent = text;
+      const container = document.getElementById('notify');
+      container.appendChild(div);
+      setTimeout(()=>{ div.remove(); }, 3500);
+    }
+
+    // PayPal Buttons: create order on server
+    paypal.Buttons({
+      style: { shape: 'rect', color: 'gold', layout: 'vertical', label: 'pay' },
+
+      createOrder: function(data, actions) {
+        const qty = parseInt(document.getElementById('qty').value || '1', 10);
+        const sizeBtn = document.querySelector('.size-btn.border-2');
+        const size = sizeBtn ? sizeBtn.getAttribute('data-size') : 'M';
+        const color = document.querySelector('input[name="color"]:checked').value;
+
+        return fetch('/api/paypal/create-order', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            productId: 'cloudrest-cozy-dog-bed',
+            qty,
+            size,
+            color
+          })
+        })
+        .then(r => {
+          if (!r.ok) throw new Error('Create order failed');
+          return r.json();
+        })
+        .then(data => data.orderID);
+      },
+
+      onApprove: function(data, actions) {
+        return fetch('/api/paypal/capture-order', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ orderID: data.orderID })
+        })
+        .then(r => {
+          if (!r.ok) throw new Error('Capture failed');
+          return r.json();
+        })
+        .then(result => {
+          const payerName = (result.payer && result.payer.name && result.payer.name.given_name) || '';
+          showNotify(`Thank you, ${payerName || 'customer'}! Your order is confirmed.`, 'success');
+        })
+        .catch(err => {
+          console.error(err);
+          showNotify('Payment error. Please try again.', 'error');
+        });
+      },
+
+      onError: function(err) {
+        console.error('PayPal error', err);
+        showNotify('PayPal error. Please try later.', 'error');
+      }
+    }).render('#paypal-button-container');
+  </script>
+</body>
+</html>
