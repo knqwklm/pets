@@ -1,0 +1,34 @@
+```markdown
+# Demo CloudRest Site
+
+This repository includes a demo storefront and a minimal Node/Express backend for local testing.
+
+Contents:
+- `public/index.html`: Demo storefront
+- `server.js`: Minimal Node/Express backend
+- `package.json`: Dependencies
+- `.env.example`: Example of environment variables for PayPal sandbox credentials
+
+Quick start (using PayPal sandbox):
+
+1. Place files in project:
+   - Put `public/index.html` and other frontend assets into ./public
+   - `server.js` in project root
+
+2. Install dependencies:
+   npm install
+
+3. Create `.env` based on `.env.example` and set:
+   - PAYPAL_CLIENT_ID (sandbox client id)
+   - PAYPAL_CLIENT_SECRET (sandbox secret)
+   - PAYPAL_ENV=(sandbox|production)
+
+4. Run server:
+   npm run dev
+
+5. Open http://localhost:3000
+
+Notes:
+- Use HTTPS in production, verify PayPal webhooks (validate signatures), store secrets securely.
+- Always calculate prices on the server — do not trust client input.
+```
